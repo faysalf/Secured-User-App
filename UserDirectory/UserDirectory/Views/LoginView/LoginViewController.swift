@@ -13,6 +13,11 @@ class LoginViewController: UIViewController {
             .instantiateViewController(withIdentifier: "LoginViewControllerID") as! LoginViewController
     }
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
     // Life Cycles
     override
     func viewDidLoad() {
@@ -36,7 +41,21 @@ class LoginViewController: UIViewController {
     // setup
     private func setup() {
         navigationItem.title = "Login"
+        
     }
+    
+    // Actions
+    @IBAction
+    private func loginButtonAction(_ sender: UIButton) {
+        LoadingIndicator.shared.startAnimating(on: view)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+3.0) {
+            LoadingIndicator.shared.stopAnimating()
+        }
+        
+    }
+    
+    
     
 }
 
