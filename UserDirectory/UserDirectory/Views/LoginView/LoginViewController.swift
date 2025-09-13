@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class LoginViewController: UIViewController {
     static func instantiate() -> LoginViewController {
@@ -16,6 +17,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    var indicator = LoadingIndicator.shared
+    var vm = AuthenticationViewModel(service: AuthenticationService())
+    var cancellables: Set<AnyCancellable> = []
     
     
     // Life Cycles
@@ -24,6 +28,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         setup()
+        networkSetup()
     }
     
     override
@@ -41,36 +46,70 @@ class LoginViewController: UIViewController {
     // setup
     private func setup() {
         navigationItem.title = "Login"
-        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     // Actions
     @IBAction
     private func loginButtonAction(_ sender: UIButton) {
-        LoadingIndicator.shared.startAnimating(on: view)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()+3.0) {
-            LoadingIndicator.shared.stopAnimating()
-        }
-        
+        login()
     }
-    
-    
     
 }
 
+// MARK: - Methods
+extension LoginViewController {
+    private func login() {
+        guard let email = emailTextField.text else {
+            showBottomPopup(isError: true, withMessage: "Please enter a correct email")
+            return
+        }
+        guard let password = passwordTextField.text else {
+            showBottomPopup(isError: true, withMessage: "Please enter password")
+            return
+        }
+        vm.login(email: email, password: password)
+    }
+    
+    private func networkSetup() {
+        vm.$isLoading
+            .sink {[weak self] loading in
+                guard let self else { return }
+                
+                if loading {
+                    indicator.startAnimating(on: view)
+                }else {
+                    indicator.stopAnimating()
+                }
+            }
+            .store(in: &cancellables)
+        
+        vm.$errorMessage
+            .sink {[weak self] message in
+                if let message, message != "" {
+                    self?.showBottomPopup(isError: true, withMessage: message)
+                }
+            }
+            .store(in: &cancellables)
+        
+    }
+    
+}
 
-//struct WrappedLoginViewController: UIViewControllerRepresentable {
-//    
-//    func makeUIViewController(context: Context) -> UIViewController {
-//        return context.makeViewController()
-//    }
-//    
-//    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-//        
-//    }
-//}
-//
-//#Preview {
-//    LoginViewController()
-//}
+// Text Field Delegates
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            passwordTextField.becomeFirstResponder()
+        }
+        else if textField == passwordTextField {
+            login()
+        }
+        
+        return true
+    }
+    
+    
+}
