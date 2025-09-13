@@ -21,7 +21,8 @@
 		71828E322E77590B00F65079 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E302E77590B00F65079 /* UsersListViewController.swift */; };
 		71828E342E77590B00F65079 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E332E77590B00F65079 /* UserDefaultsManager.swift */; };
 		71828E352E77590B00F65079 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E332E77590B00F65079 /* UserDefaultsManager.swift */; };
-		B28510FC2E7595C1003A8E54 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FB2E7595C1003A8E54 /* TestSwiftUIView.swift */; };
+		71B4D9DC2E774B0E00694296 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9DB2E774B0E00694296 /* AuthenticationService.swift */; };
+		71B4D9DD2E774B0E00694296 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9DB2E774B0E00694296 /* AuthenticationService.swift */; };
 		B28510FE2E75A9F3003A8E54 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */; };
 		B28511002E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
 		B28511012E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
@@ -31,8 +32,6 @@
 		B285110D2E75B3B7003A8E54 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B285110C2E75B3B7003A8E54 /* Alamofire */; };
 		B28511102E75B6B9003A8E54 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285110F2E75B6B9003A8E54 /* AppConfig.swift */; };
 		B28511132E75C1DB003A8E54 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511122E75C1DB003A8E54 /* CustomError.swift */; };
-		B28511152E75C3DE003A8E54 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511142E75C3DE003A8E54 /* AuthenticationService.swift */; };
-		B28511162E75C3DE003A8E54 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511142E75C3DE003A8E54 /* AuthenticationService.swift */; };
 		B28511182E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511172E75C409003A8E54 /* AuthenticationServiceProtocol.swift */; };
 		B28511192E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511172E75C409003A8E54 /* AuthenticationServiceProtocol.swift */; };
 		B285111B2E75C64C003A8E54 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285111A2E75C64C003A8E54 /* LoginResponseModel.swift */; };
@@ -75,14 +74,13 @@
 		71828E2D2E77590B00F65079 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		71828E302E77590B00F65079 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		71828E332E77590B00F65079 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
-		B28510FB2E7595C1003A8E54 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestSwiftUIView.swift; path = UserDirectory/TestSwiftUIView.swift; sourceTree = SOURCE_ROOT; };
+		71B4D9DB2E774B0E00694296 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
 		B28511032E75B0A3003A8E54 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		B28511092E75B354003A8E54 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		B285110F2E75B6B9003A8E54 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		B28511122E75C1DB003A8E54 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
-		B28511142E75C3DE003A8E54 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationService.swift; path = /Applications/AuthenticationService.swift; sourceTree = "<absolute>"; };
 		B28511172E75C409003A8E54 /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
 		B285111A2E75C64C003A8E54 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginResponseModel.swift; path = UserDirectory/LoginResponseModel.swift; sourceTree = SOURCE_ROOT; };
 		B285111F2E75C7D8003A8E54 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 		71828E202E77590B00F65079 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B28510FB2E7595C1003A8E54 /* TestSwiftUIView.swift */,
 				B285111A2E75C64C003A8E54 /* LoginResponseModel.swift */,
 			);
 			path = Models;
@@ -261,7 +258,7 @@
 		B28511072E75B2D3003A8E54 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B28511142E75C3DE003A8E54 /* AuthenticationService.swift */,
+				71B4D9DB2E774B0E00694296 /* AuthenticationService.swift */,
 				B28511172E75C409003A8E54 /* AuthenticationServiceProtocol.swift */,
 			);
 			path = Services;
@@ -445,10 +442,10 @@
 				71828E2A2E77590B00F65079 /* LoginViewController.swift in Sources */,
 				B28511202E75C7D8003A8E54 /* AuthenticationViewModel.swift in Sources */,
 				B28511132E75C1DB003A8E54 /* CustomError.swift in Sources */,
-				B28510FC2E7595C1003A8E54 /* TestSwiftUIView.swift in Sources */,
 				B285110A2E75B354003A8E54 /* NetworkClient.swift in Sources */,
 				71828E132E75F82A00F65079 /* AppDelegate.swift in Sources */,
 				B28510FE2E75A9F3003A8E54 /* LoadingIndicator.swift in Sources */,
+				71B4D9DD2E774B0E00694296 /* AuthenticationService.swift in Sources */,
 				B28511192E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */,
 				71828E312E77590B00F65079 /* UsersListViewController.swift in Sources */,
 				B28511012E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */,
@@ -457,7 +454,6 @@
 				B285111B2E75C64C003A8E54 /* LoginResponseModel.swift in Sources */,
 				71828E142E75F82A00F65079 /* SceneDelegate.swift in Sources */,
 				B28511042E75B0A3003A8E54 /* KeychainManager.swift in Sources */,
-				B28511152E75C3DE003A8E54 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,9 +462,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71828E352E77590B00F65079 /* UserDefaultsManager.swift in Sources */,
-				B28511162E75C3DE003A8E54 /* AuthenticationService.swift in Sources */,
 				71828E182E75F82E00F65079 /* UserDirectoryTests.swift in Sources */,
 				B28511002E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */,
+				71B4D9DC2E774B0E00694296 /* AuthenticationService.swift in Sources */,
 				B285111C2E75C64C003A8E54 /* LoginResponseModel.swift in Sources */,
 				B28511182E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */,
 				B28511212E75C7D8003A8E54 /* AuthenticationViewModel.swift in Sources */,
@@ -528,7 +524,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DY62PV4QQ2;
+				DEVELOPMENT_TEAM = WXHAH5T735;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserDirectory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -561,7 +557,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DY62PV4QQ2;
+				DEVELOPMENT_TEAM = WXHAH5T735;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserDirectory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -49,7 +49,8 @@ class NetworkClient {
     
     func getHeader(withAuth: Bool)-> HTTPHeaders {
         var headers: HTTPHeaders = [
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "x-api-key": "reqres-free-v1"
         ]
         if withAuth {
             headers["Authorization"] = "Bearer "
