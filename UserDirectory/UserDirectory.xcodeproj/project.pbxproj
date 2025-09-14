@@ -41,6 +41,43 @@
 		B233B4602E772482000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
 		B233B4622E772D2E000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
 		B233B4632E772D2E000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
+		B233B4642E7748C2000CA416 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E2D2E77590B00F65079 /* Theme.swift */; };
+		B233B4652E7748C2000CA416 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E2D2E77590B00F65079 /* Theme.swift */; };
+		B233B4662E7748DD000CA416 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285111F2E75C7D8003A8E54 /* AuthenticationViewModel.swift */; };
+		B233B4672E774916000CA416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71828E062E75F82A00F65079 /* Assets.xcassets */; };
+		B233B4682E774916000CA416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71828E062E75F82A00F65079 /* Assets.xcassets */; };
+		B233B4692E774936000CA416 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511172E75C409003A8E54 /* AuthenticationServiceProtocol.swift */; };
+		B233B46A2E77493D000CA416 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285111A2E75C64C003A8E54 /* LoginResponseModel.swift */; };
+		B233B46B2E77495A000CA416 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511032E75B0A3003A8E54 /* KeychainManager.swift */; };
+		B233B46C2E774969000CA416 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9DB2E774B0E00694296 /* AuthenticationService.swift */; };
+		B233B46D2E774973000CA416 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E302E77590B00F65079 /* UsersListViewController.swift */; };
+		B233B46E2E7749A1000CA416 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E332E77590B00F65079 /* UserDefaultsManager.swift */; };
+		B233B46F2E7749CD000CA416 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511092E75B354003A8E54 /* NetworkClient.swift */; };
+		B233B4702E7749CD000CA416 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511092E75B354003A8E54 /* NetworkClient.swift */; };
+		B233B4712E7749E7000CA416 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511122E75C1DB003A8E54 /* CustomError.swift */; };
+		B233B4722E7749E7000CA416 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28511122E75C1DB003A8E54 /* CustomError.swift */; };
+		B233B4732E7749F6000CA416 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */; };
+		B233B4742E7749F6000CA416 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */; };
+		B233B4752E774A0C000CA416 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9E82E774B0E00694296 /* UserListModel.swift */; };
+		B233B4762E774A1B000CA416 /* DashboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9F82E774B0E00694296 /* DashboardService.swift */; };
+		B233B4772E774A33000CA416 /* DashboardServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9FB2E774B0E00694296 /* DashboardServiceProtocol.swift */; };
+		B233B4782E774A4D000CA416 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9ED2E774B0E00694296 /* DashboardViewModel.swift */; };
+		B233B4792E774A5D000CA416 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285110F2E75B6B9003A8E54 /* AppConfig.swift */; };
+		B233B47A2E774A5D000CA416 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285110F2E75B6B9003A8E54 /* AppConfig.swift */; };
+		B233B47B2E774A6D000CA416 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9E22E774B0E00694296 /* UserTableViewCell.swift */; };
+		B233B47C2E774A7D000CA416 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B4D9E32E774B0E00694296 /* UserTableViewCell.xib */; };
+		B233B47D2E774A86000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
+		B233B47E2E774A90000CA416 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */; };
+		B233B47F2E774AB2000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
+		B233B4802E774AB7000CA416 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
+		B233B4812E774ABD000CA416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E052E75F82A00F65079 /* AppDelegate.swift */; };
+		B233B4822E774ABD000CA416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E052E75F82A00F65079 /* AppDelegate.swift */; };
+		B233B4832E774AC2000CA416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E0C2E75F82A00F65079 /* SceneDelegate.swift */; };
+		B233B4842E774AC2000CA416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E0C2E75F82A00F65079 /* SceneDelegate.swift */; };
+		B233B4852E774B51000CA416 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E292E77590B00F65079 /* LoginViewController.swift */; };
+		B233B4862E774B51000CA416 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E292E77590B00F65079 /* LoginViewController.swift */; };
+		B233B4882E774B82000CA416 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B233B4872E774B82000CA416 /* Alamofire */; };
+		B233B48A2E774B96000CA416 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B233B4892E774B96000CA416 /* Alamofire */; };
 		B28510FE2E75A9F3003A8E54 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */; };
 		B28511002E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
 		B28511012E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
@@ -126,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B233B4882E774B82000CA416 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B233B48A2E774B96000CA416 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +449,7 @@
 			);
 			name = UserDirectoryTests;
 			packageProductDependencies = (
+				B233B4872E774B82000CA416 /* Alamofire */,
 			);
 			productName = UserDirectoryTests;
 			productReference = 71828DE72E75F80A00F65079 /* UserDirectoryTests.xctest */;
@@ -430,6 +470,7 @@
 			);
 			name = UserDirectoryUITests;
 			packageProductDependencies = (
+				B233B4892E774B96000CA416 /* Alamofire */,
 			);
 			productName = UserDirectoryUITests;
 			productReference = 71828DF12E75F80A00F65079 /* UserDirectoryUITests.xctest */;
@@ -498,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B233B4672E774916000CA416 /* Assets.xcassets in Resources */,
 				71B4D9E42E774B0E00694296 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +548,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B233B47C2E774A7D000CA416 /* UserTableViewCell.xib in Resources */,
+				B233B4682E774916000CA416 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,15 +591,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B233B46F2E7749CD000CA416 /* NetworkClient.swift in Sources */,
 				71828E352E77590B00F65079 /* UserDefaultsManager.swift in Sources */,
 				71828E182E75F82E00F65079 /* UserDirectoryTests.swift in Sources */,
+				B233B4732E7749F6000CA416 /* LoadingIndicator.swift in Sources */,
 				71B4D9E52E774B0E00694296 /* UserTableViewCell.swift in Sources */,
 				B233B45C2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */,
+				B233B4712E7749E7000CA416 /* CustomError.swift in Sources */,
 				B28511002E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */,
 				71B4D9FA2E774B0E00694296 /* DashboardService.swift in Sources */,
 				71B4D9FD2E774B0E00694296 /* DashboardServiceProtocol.swift in Sources */,
 				71B4D9DC2E774B0E00694296 /* AuthenticationService.swift in Sources */,
 				B285111C2E75C64C003A8E54 /* LoginResponseModel.swift in Sources */,
+				B233B4642E7748C2000CA416 /* Theme.swift in Sources */,
+				B233B4852E774B51000CA416 /* LoginViewController.swift in Sources */,
+				B233B4792E774A5D000CA416 /* AppConfig.swift in Sources */,
 				B233B45F2E772482000CA416 /* UserProfileViewController.swift in Sources */,
 				71B4D9EA2E774B0E00694296 /* UserListModel.swift in Sources */,
 				B28511182E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */,
@@ -564,6 +614,8 @@
 				71828E322E77590B00F65079 /* UsersListViewController.swift in Sources */,
 				71B4D9EF2E774B0E00694296 /* DashboardViewModel.swift in Sources */,
 				B28511052E75B0A3003A8E54 /* KeychainManager.swift in Sources */,
+				B233B4812E774ABD000CA416 /* AppDelegate.swift in Sources */,
+				B233B4832E774AC2000CA416 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,8 +623,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B233B4822E774ABD000CA416 /* AppDelegate.swift in Sources */,
+				B233B46A2E77493D000CA416 /* LoginResponseModel.swift in Sources */,
+				B233B47D2E774A86000CA416 /* UserProfileViewController.swift in Sources */,
+				B233B4662E7748DD000CA416 /* AuthenticationViewModel.swift in Sources */,
+				B233B46B2E77495A000CA416 /* KeychainManager.swift in Sources */,
+				B233B4702E7749CD000CA416 /* NetworkClient.swift in Sources */,
+				B233B4772E774A33000CA416 /* DashboardServiceProtocol.swift in Sources */,
+				B233B4692E774936000CA416 /* AuthenticationServiceProtocol.swift in Sources */,
+				B233B4742E7749F6000CA416 /* LoadingIndicator.swift in Sources */,
+				B233B4722E7749E7000CA416 /* CustomError.swift in Sources */,
+				B233B47E2E774A90000CA416 /* TestSwiftUIView.swift in Sources */,
+				B233B4782E774A4D000CA416 /* DashboardViewModel.swift in Sources */,
+				B233B47A2E774A5D000CA416 /* AppConfig.swift in Sources */,
+				B233B4802E774AB7000CA416 /* Ext+UIViewController.swift in Sources */,
+				B233B4652E7748C2000CA416 /* Theme.swift in Sources */,
+				B233B46D2E774973000CA416 /* UsersListViewController.swift in Sources */,
+				B233B47B2E774A6D000CA416 /* UserTableViewCell.swift in Sources */,
+				B233B46E2E7749A1000CA416 /* UserDefaultsManager.swift in Sources */,
 				71828E1C2E75F83100F65079 /* UserDirectoryUITests.swift in Sources */,
 				71828E1D2E75F83100F65079 /* UserDirectoryUITestsLaunchTests.swift in Sources */,
+				B233B4842E774AC2000CA416 /* SceneDelegate.swift in Sources */,
+				B233B4752E774A0C000CA416 /* UserListModel.swift in Sources */,
+				B233B47F2E774AB2000CA416 /* Ext+UIImage.swift in Sources */,
+				B233B4762E774A1B000CA416 /* DashboardService.swift in Sources */,
+				B233B4862E774B51000CA416 /* LoginViewController.swift in Sources */,
+				B233B46C2E774969000CA416 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +692,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DY62PV4QQ2;
@@ -634,6 +711,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.faysal.UserDirectory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -649,6 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DY62PV4QQ2;
@@ -667,6 +746,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.faysal.UserDirectory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -802,7 +882,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXHAH5T735;
+				DEVELOPMENT_TEAM = DY62PV4QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -821,7 +901,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXHAH5T735;
+				DEVELOPMENT_TEAM = DY62PV4QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -839,7 +919,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXHAH5T735;
+				DEVELOPMENT_TEAM = DY62PV4QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.faysal.UserDirectoryUITests;
@@ -856,7 +936,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WXHAH5T735;
+				DEVELOPMENT_TEAM = DY62PV4QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.faysal.UserDirectoryUITests;
@@ -921,6 +1001,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B233B4872E774B82000CA416 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B285110B2E75B3B7003A8E54 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B233B4892E774B96000CA416 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B285110B2E75B3B7003A8E54 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		B285110C2E75B3B7003A8E54 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B285110B2E75B3B7003A8E54 /* XCRemoteSwiftPackageReference "Alamofire" */;
