@@ -171,6 +171,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-cg-Pcs">
+                                <rect key="frame" x="0.0" y="89" width="393" height="729"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="user_list_tv_cell_identifier" id="uFJ-l2-IxD">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="51.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uFJ-l2-IxD" id="oNS-Bo-pJx">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="51.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEd-y3-0Wa">
                                 <rect key="frame" x="333" y="59" width="44" height="44"/>
                                 <constraints>
@@ -183,14 +197,29 @@
                                     <action selector="logoutButtonAction:" destination="DKN-zw-tzt" eventType="touchUpInside" id="NEm-7K-CZr"/>
                                 </connections>
                             </button>
+                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMV-bY-btj">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vPB-HE-alQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CEd-y3-0Wa" firstAttribute="top" secondItem="vPB-HE-alQ" secondAttribute="top" id="5I3-5g-kAa"/>
+                            <constraint firstItem="vPB-HE-alQ" firstAttribute="bottom" secondItem="eNy-cg-Pcs" secondAttribute="bottom" id="FwG-qD-twn"/>
+                            <constraint firstItem="eNy-cg-Pcs" firstAttribute="leading" secondItem="vPB-HE-alQ" secondAttribute="leading" id="HWv-qB-uWB"/>
+                            <constraint firstItem="kMV-bY-btj" firstAttribute="leading" secondItem="Pv4-Ya-dVm" secondAttribute="leading" id="I4O-Xj-g7P"/>
                             <constraint firstItem="vPB-HE-alQ" firstAttribute="trailing" secondItem="CEd-y3-0Wa" secondAttribute="trailing" constant="16" id="Mqd-dS-rT3"/>
+                            <constraint firstItem="vPB-HE-alQ" firstAttribute="trailing" secondItem="eNy-cg-Pcs" secondAttribute="trailing" id="W73-2A-0sW"/>
+                            <constraint firstAttribute="trailing" secondItem="kMV-bY-btj" secondAttribute="trailing" id="b6u-xQ-f4c"/>
+                            <constraint firstItem="vPB-HE-alQ" firstAttribute="top" secondItem="kMV-bY-btj" secondAttribute="bottom" id="qYK-6g-6Ts"/>
+                            <constraint firstItem="kMV-bY-btj" firstAttribute="top" secondItem="Pv4-Ya-dVm" secondAttribute="top" id="yaI-dV-QQ7"/>
+                            <constraint firstItem="eNy-cg-Pcs" firstAttribute="top" secondItem="kMV-bY-btj" secondAttribute="bottom" constant="30" id="zRp-0T-ogL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userTableView" destination="eNy-cg-Pcs" id="iEn-59-FJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7D1-kM-ydD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
