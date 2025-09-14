@@ -50,6 +50,15 @@ class UsersListViewController: UIViewController {
     // setup
     private func setupUIs() {
         navigationItem.title = "Members"
+        navigationItem.setRightBarButton(
+            UIBarButtonItem(
+                image: UIImage(systemName: "rectangle.portrait.and.arrow.right"),
+                style: .plain,
+                target: self,
+                action: #selector(logoutButtonAction(_:))
+            ),
+            animated: true
+        )
         
         let nib = UINib(nibName: "UserTableViewCell", bundle: nil)
         userTableView.register(nib, forCellReuseIdentifier: UserTableViewCell.IDENTIFIER)
@@ -89,7 +98,7 @@ class UsersListViewController: UIViewController {
     }
     
     // Actions
-    @IBAction
+    @objc
     private func logoutButtonAction(_ sender: UIButton) {
         kcm.deleteToken()
         udm.isLogin = false
@@ -135,7 +144,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
-        126
+        112
     }
     
     func tableView(

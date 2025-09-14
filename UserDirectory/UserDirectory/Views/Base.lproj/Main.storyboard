@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -171,50 +170,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-cg-Pcs">
-                                <rect key="frame" x="0.0" y="89" width="393" height="729"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-cg-Pcs">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="user_list_tv_cell_identifier" id="uFJ-l2-IxD">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="51.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uFJ-l2-IxD" id="oNS-Bo-pJx">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="51.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="appBg"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEd-y3-0Wa">
-                                <rect key="frame" x="333" y="59" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="MZd-nk-E8q"/>
-                                    <constraint firstAttribute="width" constant="44" id="QOb-rj-mXq"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="person.and.arrow.left.and.arrow.right.outward" catalog="system"/>
-                                <connections>
-                                    <action selector="logoutButtonAction:" destination="DKN-zw-tzt" eventType="touchUpInside" id="NEm-7K-CZr"/>
-                                </connections>
-                            </button>
-                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMV-bY-btj">
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMV-bY-btj">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vPB-HE-alQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="appBg"/>
                         <constraints>
-                            <constraint firstItem="CEd-y3-0Wa" firstAttribute="top" secondItem="vPB-HE-alQ" secondAttribute="top" id="5I3-5g-kAa"/>
-                            <constraint firstItem="vPB-HE-alQ" firstAttribute="bottom" secondItem="eNy-cg-Pcs" secondAttribute="bottom" id="FwG-qD-twn"/>
+                            <constraint firstAttribute="bottom" secondItem="eNy-cg-Pcs" secondAttribute="bottom" id="Bu3-tf-hYB"/>
                             <constraint firstItem="eNy-cg-Pcs" firstAttribute="leading" secondItem="vPB-HE-alQ" secondAttribute="leading" id="HWv-qB-uWB"/>
                             <constraint firstItem="kMV-bY-btj" firstAttribute="leading" secondItem="Pv4-Ya-dVm" secondAttribute="leading" id="I4O-Xj-g7P"/>
-                            <constraint firstItem="vPB-HE-alQ" firstAttribute="trailing" secondItem="CEd-y3-0Wa" secondAttribute="trailing" constant="16" id="Mqd-dS-rT3"/>
                             <constraint firstItem="vPB-HE-alQ" firstAttribute="trailing" secondItem="eNy-cg-Pcs" secondAttribute="trailing" id="W73-2A-0sW"/>
                             <constraint firstAttribute="trailing" secondItem="kMV-bY-btj" secondAttribute="trailing" id="b6u-xQ-f4c"/>
                             <constraint firstItem="vPB-HE-alQ" firstAttribute="top" secondItem="kMV-bY-btj" secondAttribute="bottom" id="qYK-6g-6Ts"/>
                             <constraint firstItem="kMV-bY-btj" firstAttribute="top" secondItem="Pv4-Ya-dVm" secondAttribute="top" id="yaI-dV-QQ7"/>
-                            <constraint firstItem="eNy-cg-Pcs" firstAttribute="top" secondItem="kMV-bY-btj" secondAttribute="bottom" constant="30" id="zRp-0T-ogL"/>
+                            <constraint firstItem="eNy-cg-Pcs" firstAttribute="top" secondItem="kMV-bY-btj" secondAttribute="bottom" id="zRp-0T-ogL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -223,17 +210,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7D1-kM-ydD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-19"/>
+            <point key="canvasLocation" x="748.85496183206101" y="-19.014084507042256"/>
         </scene>
     </scenes>
     <resources>
         <image name="lock.shield.fill" catalog="system" width="121" height="128"/>
-        <image name="person.and.arrow.left.and.arrow.right.outward" catalog="system" width="128" height="89"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appBg">
-            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="0.96189466059602646" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appTextPrimary">
             <color red="0.11800000071525574" green="0.16099999845027924" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -241,8 +227,5 @@
         <namedColor name="appTextSecondary">
             <color red="0.3919999897480011" green="0.45500001311302185" blue="0.54500001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
