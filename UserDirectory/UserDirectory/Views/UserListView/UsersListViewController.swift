@@ -20,7 +20,7 @@ class UsersListViewController: UIViewController {
     private var indicator = LoadingIndicator.shared
     private var cancellables: Set<AnyCancellable> = []
     private var vm = DashboardViewModel(service: DashboardService())
-    
+    private var refreshControl = UIRefreshControl()
     
     // Life Cycles
     override
@@ -29,6 +29,7 @@ class UsersListViewController: UIViewController {
         
         setupUIs()
         configure()
+        setupPullDownToRefresh()
     }
     
     override
@@ -107,6 +108,14 @@ class UsersListViewController: UIViewController {
         sceneDelegate?.setRootViewController()
     }
     
+    @objc
+    private func refreshData() {
+        vm.isLoading = true
+        vm.pageNo = 1
+        vm.users = []
+        vm.getUsers()
+    }
+    
 }
 
 // MARK: - Methods
@@ -119,6 +128,7 @@ extension UsersListViewController {
     
     private func reloadUIs() {
         DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
             self.userTableView.reloadData()
         }
     }
@@ -140,6 +150,14 @@ extension UsersListViewController {
             .store(in: &cancellables)
     }
     
+    private func setupPullDownToRefresh() {
+        refreshControl.attributedTitle = NSAttributedString(string: "")
+        refreshControl.tintColor = Theme.primary
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        userTableView.refreshControl = refreshControl
+    }
+    
+    
 }
 
 // MARK: - UI table view delegata & datasource
@@ -156,6 +174,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
+        guard indexPath.row < vm.users.count else { return UITableViewCell() }
         
         let cell = userTableView.dequeueReusableCell(withIdentifier: UserTableViewCell.IDENTIFIER, for: indexPath) as! UserTableViewCell
         cell.configure(with: vm.users[indexPath.row])
