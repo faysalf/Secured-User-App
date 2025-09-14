@@ -139,7 +139,7 @@ extension UsersListViewController {
     }
     
     private func setupCellImage(with cell: UserTableViewCell, urlString: String) {
-        UIImage.iconDownloader(with: "https://randomuser.me/api/portraits/women/44.jpg")
+        UIImage.iconDownloader(with: urlString)
             .sink { completion in
                 if case .failure(let error) = completion {
                     debugPrint("Error to fetch user profile image: \(error)")
@@ -181,7 +181,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         let vw = UIView()
         vw.backgroundColor = .clear
         cell.selectedBackgroundView = vw
-        setupCellImage(with: cell, urlString: "https://randomuser.me/api/portraits/women/44.jpg")
+        setupCellImage(with: cell, urlString: vm.users[indexPath.row].avatar)
         
         return cell
     }

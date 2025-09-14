@@ -55,7 +55,7 @@ class UserProfileViewController: UIViewController {
             self.userEmailLabel.text = user.email
         }
         
-        UIImage.iconDownloader(with: "https://randomuser.me/api/portraits/women/44.jpg")
+        UIImage.iconDownloader(with: user.avatar)
             .sink { completion in
                 if case .failure(let error) = completion {
                     debugPrint("Error to fetch user profile image: \(error)")

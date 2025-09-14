@@ -35,8 +35,6 @@
 		71B4D9FA2E774B0E00694296 /* DashboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9F82E774B0E00694296 /* DashboardService.swift */; };
 		71B4D9FC2E774B0E00694296 /* DashboardServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9FB2E774B0E00694296 /* DashboardServiceProtocol.swift */; };
 		71B4D9FD2E774B0E00694296 /* DashboardServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9FB2E774B0E00694296 /* DashboardServiceProtocol.swift */; };
-		B233B45C2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */; };
-		B233B45D2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */; };
 		B233B45F2E772482000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
 		B233B4602E772482000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
 		B233B4622E772D2E000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
@@ -67,7 +65,6 @@
 		B233B47B2E774A6D000CA416 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9E22E774B0E00694296 /* UserTableViewCell.swift */; };
 		B233B47C2E774A7D000CA416 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B4D9E32E774B0E00694296 /* UserTableViewCell.xib */; };
 		B233B47D2E774A86000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
-		B233B47E2E774A90000CA416 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */; };
 		B233B47F2E774AB2000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
 		B233B4802E774AB7000CA416 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
 		B233B4812E774ABD000CA416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828E052E75F82A00F65079 /* AppDelegate.swift */; };
@@ -136,7 +133,6 @@
 		71B4D9ED2E774B0E00694296 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		71B4D9F82E774B0E00694296 /* DashboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardService.swift; sourceTree = "<group>"; };
 		71B4D9FB2E774B0E00694296 /* DashboardServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardServiceProtocol.swift; sourceTree = "<group>"; };
-		B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIView.swift; sourceTree = "<group>"; };
 		B233B45E2E772482000CA416 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		B233B4612E772D2E000CA416 /* Ext+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
 		B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
@@ -238,7 +234,6 @@
 			children = (
 				B285111A2E75C64C003A8E54 /* LoginResponseModel.swift */,
 				71B4D9E82E774B0E00694296 /* UserListModel.swift */,
-				B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -575,7 +570,6 @@
 				B28511192E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */,
 				71828E312E77590B00F65079 /* UsersListViewController.swift in Sources */,
 				71B4D9EE2E774B0E00694296 /* DashboardViewModel.swift in Sources */,
-				B233B45D2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */,
 				71B4D9E72E774B0E00694296 /* UserTableViewCell.swift in Sources */,
 				B233B4632E772D2E000CA416 /* Ext+UIImage.swift in Sources */,
 				B28511012E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */,
@@ -596,7 +590,6 @@
 				71828E182E75F82E00F65079 /* UserDirectoryTests.swift in Sources */,
 				B233B4732E7749F6000CA416 /* LoadingIndicator.swift in Sources */,
 				71B4D9E52E774B0E00694296 /* UserTableViewCell.swift in Sources */,
-				B233B45C2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */,
 				B233B4712E7749E7000CA416 /* CustomError.swift in Sources */,
 				B28511002E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */,
 				71B4D9FA2E774B0E00694296 /* DashboardService.swift in Sources */,
@@ -633,7 +626,6 @@
 				B233B4692E774936000CA416 /* AuthenticationServiceProtocol.swift in Sources */,
 				B233B4742E7749F6000CA416 /* LoadingIndicator.swift in Sources */,
 				B233B4722E7749E7000CA416 /* CustomError.swift in Sources */,
-				B233B47E2E774A90000CA416 /* TestSwiftUIView.swift in Sources */,
 				B233B4782E774A4D000CA416 /* DashboardViewModel.swift in Sources */,
 				B233B47A2E774A5D000CA416 /* AppConfig.swift in Sources */,
 				B233B4802E774AB7000CA416 /* Ext+UIViewController.swift in Sources */,
