@@ -9,10 +9,14 @@ import UIKit
 import Combine
 
 class UsersListViewController: UIViewController {
+    
     static func instantiate() -> UsersListViewController {
         UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "UsersListViewControllerID") as! UsersListViewController
     }
+    private var kcm = KeychainManager.shared
+    private var udm = UserDefaults.standard
+    private var cancellables: Set<AnyCancellable> = []
     
     // Life Cycles
     override
@@ -38,5 +42,13 @@ class UsersListViewController: UIViewController {
     private func setup() {
         navigationItem.title = "Members"
     }
+    
+    @IBAction
+    private func logoutButtonAction(_ sender: UIButton) {
+        kcm.deleteToken()
+        udm.isLogin = false
+        sceneDelegate?.setRootViewController()
+    }
+    
     
 }

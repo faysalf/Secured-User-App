@@ -170,8 +170,26 @@
                     <view key="view" contentMode="scaleToFill" id="Pv4-Ya-dVm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEd-y3-0Wa">
+                                <rect key="frame" x="333" y="59" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MZd-nk-E8q"/>
+                                    <constraint firstAttribute="width" constant="44" id="QOb-rj-mXq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="person.and.arrow.left.and.arrow.right.outward" catalog="system"/>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="DKN-zw-tzt" eventType="touchUpInside" id="NEm-7K-CZr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vPB-HE-alQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CEd-y3-0Wa" firstAttribute="top" secondItem="vPB-HE-alQ" secondAttribute="top" id="5I3-5g-kAa"/>
+                            <constraint firstItem="vPB-HE-alQ" firstAttribute="trailing" secondItem="CEd-y3-0Wa" secondAttribute="trailing" constant="16" id="Mqd-dS-rT3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7D1-kM-ydD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -181,6 +199,7 @@
     </scenes>
     <resources>
         <image name="lock.shield.fill" catalog="system" width="121" height="128"/>
+        <image name="person.and.arrow.left.and.arrow.right.outward" catalog="system" width="128" height="89"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

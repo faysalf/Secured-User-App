@@ -13,7 +13,9 @@ class AuthenticationViewModel {
     
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
+    @Published var loginSuccess: Bool = false
     private var cancellables = Set<AnyCancellable>()
+    private var kcm = KeychainManager.shared
     
     init(service: AuthenticationServiceProtocol) {
         self.service = service
@@ -30,6 +32,9 @@ class AuthenticationViewModel {
                 
             } receiveValue: {[weak self] data in
                 debugPrint("Token found", data.token)
+                UserDefaults.standard.isLogin = true
+                self?.kcm.saveToken(data.token)
+                self?.loginSuccess = true
             }
             .store(in: &cancellables)
         

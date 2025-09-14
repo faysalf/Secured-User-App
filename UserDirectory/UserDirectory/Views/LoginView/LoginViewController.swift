@@ -93,6 +93,20 @@ extension LoginViewController {
             }
             .store(in: &cancellables)
         
+        vm.$loginSuccess
+            .sink {[weak self] success in
+                if success {
+                    self?.goToNextVc()
+                }
+            }
+            .store(in: &cancellables)
+        
+    }
+    
+    private func goToNextVc() {
+        sceneDelegate?.setRootViewController()
+        //let vc = UsersListViewController.instantiate()
+        //navigationController?.pushViewController(vc, animated: true)
     }
     
 }
