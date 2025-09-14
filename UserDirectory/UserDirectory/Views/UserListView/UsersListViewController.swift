@@ -136,6 +136,9 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = userTableView.dequeueReusableCell(withIdentifier: UserTableViewCell.IDENTIFIER, for: indexPath) as! UserTableViewCell
         cell.configure(with: vm.users[indexPath.row])
+        let vw = UIView()
+        vw.backgroundColor = .clear
+        cell.selectedBackgroundView = vw
         
         return cell
     }
@@ -152,6 +155,16 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         didSelectRowAt indexPath: IndexPath
     ) {
         debugPrint("selected user name \(vm.users[indexPath.row].fullName)")
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   willDisplay cell: UITableViewCell,
+                   forRowAt indexPath: IndexPath) {
+        
+        let lastElement = vm.users.count - 1
+        if indexPath.row == lastElement && !vm.isLoading {
+            vm.getUsers()
+        }
     }
     
 }
