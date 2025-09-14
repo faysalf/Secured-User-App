@@ -37,6 +37,10 @@
 		71B4D9FD2E774B0E00694296 /* DashboardServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4D9FB2E774B0E00694296 /* DashboardServiceProtocol.swift */; };
 		B233B45C2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */; };
 		B233B45D2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */; };
+		B233B45F2E772482000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
+		B233B4602E772482000CA416 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B45E2E772482000CA416 /* UserProfileViewController.swift */; };
+		B233B4622E772D2E000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
+		B233B4632E772D2E000CA416 /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233B4612E772D2E000CA416 /* Ext+UIImage.swift */; };
 		B28510FE2E75A9F3003A8E54 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */; };
 		B28511002E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
 		B28511012E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */; };
@@ -96,6 +100,8 @@
 		71B4D9F82E774B0E00694296 /* DashboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardService.swift; sourceTree = "<group>"; };
 		71B4D9FB2E774B0E00694296 /* DashboardServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardServiceProtocol.swift; sourceTree = "<group>"; };
 		B233B45B2E771ED5000CA416 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIView.swift; sourceTree = "<group>"; };
+		B233B45E2E772482000CA416 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		B233B4612E772D2E000CA416 /* Ext+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
 		B28510FD2E75A9F3003A8E54 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
 		B28511032E75B0A3003A8E54 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B28510FF2E75AAF9003A8E54 /* Ext+UIViewController.swift */,
+				B233B4612E772D2E000CA416 /* Ext+UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 			children = (
 				71B4D9E12E774B0E00694296 /* Cells */,
 				71828E302E77590B00F65079 /* UsersListViewController.swift */,
+				B233B45E2E772482000CA416 /* UserProfileViewController.swift */,
 			);
 			path = UserListView;
 			sourceTree = "<group>";
@@ -512,6 +520,7 @@
 				71828E342E77590B00F65079 /* UserDefaultsManager.swift in Sources */,
 				71828E2A2E77590B00F65079 /* LoginViewController.swift in Sources */,
 				B28511202E75C7D8003A8E54 /* AuthenticationViewModel.swift in Sources */,
+				B233B4602E772482000CA416 /* UserProfileViewController.swift in Sources */,
 				B28511132E75C1DB003A8E54 /* CustomError.swift in Sources */,
 				71B4D9F92E774B0E00694296 /* DashboardService.swift in Sources */,
 				B285110A2E75B354003A8E54 /* NetworkClient.swift in Sources */,
@@ -524,6 +533,7 @@
 				71B4D9EE2E774B0E00694296 /* DashboardViewModel.swift in Sources */,
 				B233B45D2E771ED5000CA416 /* TestSwiftUIView.swift in Sources */,
 				71B4D9E72E774B0E00694296 /* UserTableViewCell.swift in Sources */,
+				B233B4632E772D2E000CA416 /* Ext+UIImage.swift in Sources */,
 				B28511012E75AAF9003A8E54 /* Ext+UIViewController.swift in Sources */,
 				71828E2E2E77590B00F65079 /* Theme.swift in Sources */,
 				B28511102E75B6B9003A8E54 /* AppConfig.swift in Sources */,
@@ -546,9 +556,11 @@
 				71B4D9FD2E774B0E00694296 /* DashboardServiceProtocol.swift in Sources */,
 				71B4D9DC2E774B0E00694296 /* AuthenticationService.swift in Sources */,
 				B285111C2E75C64C003A8E54 /* LoginResponseModel.swift in Sources */,
+				B233B45F2E772482000CA416 /* UserProfileViewController.swift in Sources */,
 				71B4D9EA2E774B0E00694296 /* UserListModel.swift in Sources */,
 				B28511182E75C409003A8E54 /* AuthenticationServiceProtocol.swift in Sources */,
 				B28511212E75C7D8003A8E54 /* AuthenticationViewModel.swift in Sources */,
+				B233B4622E772D2E000CA416 /* Ext+UIImage.swift in Sources */,
 				71828E322E77590B00F65079 /* UsersListViewController.swift in Sources */,
 				71B4D9EF2E774B0E00694296 /* DashboardViewModel.swift in Sources */,
 				B28511052E75B0A3003A8E54 /* KeychainManager.swift in Sources */,
@@ -606,7 +618,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BGTCQBPS5D;
+				DEVELOPMENT_TEAM = DY62PV4QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserDirectory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -639,7 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BGTCQBPS5D;
+				DEVELOPMENT_TEAM = DY62PV4QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserDirectory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

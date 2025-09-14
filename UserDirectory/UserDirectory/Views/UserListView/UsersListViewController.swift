@@ -35,9 +35,10 @@ class UsersListViewController: UIViewController {
     func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        vm.pageNo = 1
-        vm.users = []
-        vm.isLoading = true
+        if vm.users.isEmpty {
+            vm.pageNo = 1
+            vm.isLoading = true
+        }
     }
     
     override
@@ -59,6 +60,7 @@ class UsersListViewController: UIViewController {
             ),
             animated: true
         )
+        navigationItem.rightBarButtonItem?.tintColor = Theme.textPrimary
         
         let nib = UINib(nibName: "UserTableViewCell", bundle: nil)
         userTableView.register(nib, forCellReuseIdentifier: UserTableViewCell.IDENTIFIER)
@@ -105,7 +107,11 @@ class UsersListViewController: UIViewController {
         sceneDelegate?.setRootViewController()
     }
     
-    // Methods
+}
+
+// MARK: - Methods
+extension UsersListViewController {
+    
     private func fetchUsers() {
         vm.getUsers()
                 
@@ -115,6 +121,23 @@ class UsersListViewController: UIViewController {
         DispatchQueue.main.async {
             self.userTableView.reloadData()
         }
+    }
+    
+    private func goToNextVc(with user: User) {
+        let vc = UserProfileViewController.instantiate(with: user, viewModel: vm)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func setupCellImage(with cell: UserTableViewCell, urlString: String) {
+        UIImage.iconDownloader(with: "https://randomuser.me/api/portraits/women/44.jpg")
+            .sink { completion in
+                if case .failure(let error) = completion {
+                    debugPrint("Error to fetch user profile image: \(error)")
+                }
+            } receiveValue: { image in
+                cell.configureImage(image)
+            }
+            .store(in: &cancellables)
     }
     
 }
@@ -139,6 +162,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         let vw = UIView()
         vw.backgroundColor = .clear
         cell.selectedBackgroundView = vw
+        setupCellImage(with: cell, urlString: "https://randomuser.me/api/portraits/women/44.jpg")
         
         return cell
     }
@@ -147,7 +171,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
-        112
+        110
     }
     
     func tableView(
@@ -155,6 +179,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
         didSelectRowAt indexPath: IndexPath
     ) {
         debugPrint("selected user name \(vm.users[indexPath.row].fullName)")
+        goToNextVc(with: vm.users[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView,

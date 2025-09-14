@@ -30,7 +30,7 @@ class DashboardViewModel {
             return
         }
         
-        service.getUser(currentPage: pageNo, pageSize: perPage)
+        service.getUserList(currentPage: pageNo, pageSize: perPage)
             .sink {[weak self] completion in
                 self?.isLoading = false
                 if case .failure(let error) = completion {

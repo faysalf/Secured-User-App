@@ -31,4 +31,10 @@ class UserTableViewCell: UITableViewCell {
         userEmailLabel.text = user.email
     }
     
+    func configureImage(_ image: UIImage) {
+        UIView.transition(with: userProfileImgView, duration: 0.5) {
+            self.userProfileImgView.image = image
+        }
+    }
+    
 }

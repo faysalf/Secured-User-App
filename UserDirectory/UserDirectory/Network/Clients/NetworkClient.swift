@@ -52,8 +52,8 @@ class NetworkClient {
             "Content-Type": "application/json",
             "x-api-key": "reqres-free-v1"
         ]
-        if withAuth {
-            headers["Authorization"] = "Bearer "
+        if withAuth, let token = KeychainManager.shared.getToken() {
+            headers["Authorization"] = "Bearer " + token
         }
         return headers
         

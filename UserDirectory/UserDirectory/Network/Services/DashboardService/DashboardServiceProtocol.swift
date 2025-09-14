@@ -9,6 +9,6 @@ import Foundation
 import Combine
 
 protocol DashboardServiceProtocol {
-    func getUser(currentPage: Int, pageSize: Int) -> AnyPublisher<UserListModel, Error>
+    func getUserList(currentPage: Int, pageSize: Int) -> AnyPublisher<UserListModel, Error>
     
 }
