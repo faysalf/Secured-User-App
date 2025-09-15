@@ -39,9 +39,10 @@ The app follows MVVM (Model-View-ViewModel):
 
 ## Limitations:
 
-1. You may encounter an error "API key missing" for reaching out the limit of reqres free plan. For resolving, you can change the api key from App: UserDirectory -> Network -> Network Client (from getHeader method, change the value for "x-api-key")
-2. The app is created for demo purpose using reqres apis
-3. Unit test coverage is around 50%
-4. UI is not fully polished.
-5. Error handling is mimimal
+1. Please use light mode from your iPhone settings to get best user experience.
+2. You may encounter an error "API key missing" for reaching out the limit of reqres free plan. For resolving, you can change the api key from App: UserDirectory -> Network -> Network Client (from getHeader method, change the value for "x-api-key")
+3. The app is created for demo purpose using reqres apis
+4. Unit test coverage is around 50%
+5. UI is not fully polished.
+6. Error handling is mimimal
 
