@@ -64,10 +64,26 @@ extension SceneDelegate {
         if !UserDefaults.standard.isLogin {
             rootVc = LoginViewController.instantiate()
         }
-        window?.rootViewController = UINavigationController(rootViewController: rootVc)
+        let nav = UINavigationController(rootViewController: rootVc)
+        setAppearence(nav)
+        
+        window?.rootViewController = nav
         UIView.transition(with: window!, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
         window?.makeKeyAndVisible()
         
+    }
+    
+    private func setAppearence(_ nav: UINavigationController) {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = Theme.cardBackground
+        appearance.titleTextAttributes = [
+            .foregroundColor: Theme.textPrimary
+        ]
+        
+        nav.navigationBar.standardAppearance = appearance
+        nav.navigationBar.scrollEdgeAppearance = appearance
+        nav.navigationBar.compactAppearance = appearance
     }
     
     

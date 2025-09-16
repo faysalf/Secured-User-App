@@ -44,8 +44,9 @@ class UserProfileViewController: UIViewController {
     
     // setup
     private func setup() {
+        overrideUserInterfaceStyle = .light
         navigationItem.title = "Profile"
-        navigationItem.leftBarButtonItem?.tintColor = Theme.textPrimary
+
     }
     
     private func configure() {

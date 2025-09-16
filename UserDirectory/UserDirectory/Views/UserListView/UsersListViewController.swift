@@ -51,6 +51,7 @@ class UsersListViewController: UIViewController {
     
     // setup
     private func setupUIs() {
+        overrideUserInterfaceStyle = .light
         navigationItem.title = "Members"
         navigationItem.setRightBarButton(
             UIBarButtonItem(
@@ -61,7 +62,6 @@ class UsersListViewController: UIViewController {
             ),
             animated: true
         )
-        navigationItem.rightBarButtonItem?.tintColor = Theme.textPrimary
         
         let nib = UINib(nibName: "UserTableViewCell", bundle: nil)
         userTableView.register(nib, forCellReuseIdentifier: UserTableViewCell.IDENTIFIER)

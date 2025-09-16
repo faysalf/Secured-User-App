@@ -29,23 +29,22 @@ class LoginViewController: UIViewController {
         
         setup()
         networkSetup()
-    }
-    
-    override
-    func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    
-    override
-    func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+        setupKeyboardDismissal()
     }
     
     // setup
     private func setup() {
+        overrideUserInterfaceStyle = .light
         navigationItem.title = "Login"
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = Theme.cardBackground
+        appearance.titleTextAttributes = [
+            .foregroundColor: Theme.textPrimary
+        ]
+        navigationItem.standardAppearance = appearance
+        navigationItem.scrollEdgeAppearance = appearance
+        
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
@@ -60,7 +59,9 @@ class LoginViewController: UIViewController {
 
 // MARK: - Methods
 extension LoginViewController {
+    
     private func login() {
+        view.endEditing(true)
         guard let email = emailTextField.text else {
             showBottomPopup(isError: true, withMessage: "Please enter a correct email")
             return
